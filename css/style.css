@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* changes how padding is calculated MAKES IT EASIER  */
+}
+
+/* CUSTOM PROPERTIES */
+
+:root {
+  /* font family */
+  --ff-primary: 'Dancing Script', cursive;
+  --ff-secondary: 'Caveat', cursive;
+  /* font weigh */
+  --fw-reg: 300;
+  --fw-bold: 900;
+  /* color */
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+  /* font sizes, always in rem */
+  --fs-h1: 3rem;
+  --fs-h2: 2.3rem;
+  --fs-h3: 1.3rem;
+  --fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.8rem;
+    --fs-h3: 1.6rem;
+    --fs-body: 1.2em;
+  }
+}
+
+/* GENERAL STYLES */
+
+body {
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+img {
+  display: black;
+  max-width: 50%;
+  max-height: 30rem;
+}
+
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
