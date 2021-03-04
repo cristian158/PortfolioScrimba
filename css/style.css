@@ -364,6 +364,18 @@ header {
   .service + .service {
     margin-left: 2em;
   }
+
+  .sections p {
+    font-size: 1.5em;
+  }
+
+  .sections h2 {
+    font-size: 2.7em;
+  }
+
+  .sections h3 {
+    font-size: 2em;
+  }
 }
 
 .about-me {
@@ -401,6 +413,18 @@ header {
     position: relative;
     z-index: 2; /* to make sure it's always on top */
     /* grid-row: 1 / -1;  starting at the top and ending at the last row */
+  }
+
+  .sections p {
+    font-size: 1.2em;
+  }
+
+  .sections h2 {
+    font-size: 2.3em;
+  }
+
+  .sections h3 {
+    font-size: 1.7em;
   }
 }
 
