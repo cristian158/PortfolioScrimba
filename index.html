@@ -3,20 +3,28 @@
     <head>
       <meta charset='utf-8'>
       <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-      <title>Amaliopa </title>
+      <title>Amaliopa</title>
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css'> <!-- to normalize differences between browsers -->
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css' integrity='sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=' crossorigin='anonymous' />
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
-      <link rel='stylesheet' href="css/style.css">
+      <link rel='preconnect' href='https://fonts.gstatic.com'>
+      <link href='https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap' rel='stylesheet'>
+      <link rel='stylesheet' href='css/style.css'>
+      <script src='js/index.js' defer></script>
+      <!-- don't put script in head cause it loads before the body UNLESS 'defer' attribute,
+          so it loads whole body before running js
+          it downloads the script, it renders the body and then run script.
+          If script is at the bottom, it will be the last thing to load, so it's slower
+          It is faster without fucking up the rest and we don't worry about waiting for
+          DOM events, load, onready, etc
+          HTML parsing gets done (JS download included), and then executes JS, so JS doesn't block HTML parsing -->
     </head>
     <body>
       <header>
         <div class='logo'>
           <!-- <img src='img/devjane.png' alt=''> -->
         </div>
-        <button class='nav-toggle' type="button" name="button">
+        <button class='nav-toggle' type='button' name='button'>
           <span class='hamburger'></span>
         </button>
         <nav class='nav'>
@@ -90,32 +98,32 @@
 
         <div class='portfolio'>
           <!-- Portf item 01 -->
-          <a href='#' class='portfolio__item'>
+          <a href='portfolio-item1.html' class='portfolio__item'>
             <img src='img/portfolio-01.jpg' alt='' class='portfolio__img'>
           </a>
 
           <!-- Portf item 02 -->
-          <a href='#' class='portfolio__item'>
+          <a href='portfolio-item2.html' class='portfolio__item'>
             <img src='img/portfolio-02.jpg' alt='' class='portfolio__img'>
           </a>
 
           <!-- Portf item 03 -->
-          <a href='#' class='portfolio__item'>
+          <a href='portfolio-item3.html' class='portfolio__item'>
             <img src='img/portfolio-03.jpg' alt='' class='portfolio__img'>
           </a>
 
           <!-- Portf item 04 -->
-          <a href='#' class='portfolio__item'>
+          <a href='portfolio-item4.html' class='portfolio__item'>
             <img src='img/portfolio-04.jpg' alt='' class='portfolio__img'>
           </a>
 
           <!-- Portf item 05 -->
-          <a href='#' class='portfolio__item'>
+          <a href='portfolio-item5.html' class='portfolio__item'>
             <img src='img/portfolio-05.jpg' alt='' class='portfolio__img'>
           </a>
 
           <!-- Portf item 06 -->
-          <a href='#' class='portfolio__item'>
+          <a href='portfolio-item6.html' class='portfolio__item'>
             <img src='img/portfolio-06.jpg' alt='' class='portfolio__img'>
           </a>
         </div>
@@ -132,7 +140,7 @@
 
         </ul>
       </footer>
-      <script src='js/index.js'></script>
+
     </body>
 
 
