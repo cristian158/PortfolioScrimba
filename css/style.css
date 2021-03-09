@@ -21,7 +21,7 @@
   --fs-h1: 3rem;
   --fs-h2: 2.3rem;
   --fs-h3: 1.3rem;
-  --fs-body: 1rem;
+  --fs-body: 2rem;
 
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), /* box shadow*/
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -52,7 +52,7 @@ body {
 }
 
 p {
-  /* font-size: 1em; */
+  /* font-size: 1.5em; */
 }
 
 section {
