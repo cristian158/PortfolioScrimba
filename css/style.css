@@ -196,6 +196,7 @@ header {
   position: absolute;
   right: 1em; /* to put it where we want it to be */
   z-index: 1000;
+  background-color: #30303035;  
 }
 
 .nav-open .nav { /* once the nave is open, the nav itself is going to.. */
