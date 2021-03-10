@@ -15,7 +15,7 @@
   --fw-bold: 900;
   /* color */
   --clr-light: #97dde3;
-  --clr-dark: #303030;
+  --clr-dark: #3c5555;
   --clr-accent: #16e0bd;
   /* font sizes, always in rem */
   --fs-h1: 3rem;
@@ -44,6 +44,8 @@ html {
 
 body {
   background: var(--clr-light);
+  /* background: linear-gradient(90deg, rgba(151,221,227,1) 0%,
+  rgba(22,224,189,1) 50%, rgba(151,221,227,1) 100%); */
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -121,12 +123,16 @@ h3 { font-size: var(--fs-h3) }
 }
 .section__subtitle {
   margin: 0;
-  font-size var(--fs-h3);
+  font-size: var(--fs-h3);
 }
 
 .section__subtitle--intro,
 .section__subtitle--about {
   background: var(--clr-accent);
+  background: linear-gradient(90deg, rgba(151,221,227,1) 0%,
+                                    rgba(22,224,189,1) 40%,
+                                    rgba(22,224,189,1) 60%,
+                                    rgba(151,221,227,1) 100%);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -196,7 +202,7 @@ header {
   position: absolute;
   right: 1em; /* to put it where we want it to be */
   z-index: 1000;
-  background-color: #30303035;  
+  background-color: #30303035;
 }
 
 .nav-open .nav { /* once the nave is open, the nav itself is going to.. */
@@ -308,7 +314,9 @@ header {
 .my-services {
   background-color: var(--clr-accent);
   background-image: url(../img/services-bg.jpg);
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   /* background-blend-mode: multiply; */
   color: var(--clr-light);
   text-align: center;
@@ -448,7 +456,7 @@ header {
 }
 
 .portfolio__item {
-  background: var(--clr-accent); /* we don't see this color right away cause there's an img but we can play with it */
+  background: var(--clr-dark); /* we don't see this color right away cause there's an img but we can play with it */
   overflow: hidden; /* without this, it looks weeeeird */
 }
 
@@ -465,8 +473,9 @@ header {
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-  transform: scale(1.2);
-  opacity: .75; /* */
+  transform: scale(1.05);
+  filter:blur(1px);
+  opacity: .75;
 }
 
 
